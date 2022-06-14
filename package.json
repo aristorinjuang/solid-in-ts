@@ -1,0 +1,34 @@
+{
+  "name": "solid-in-ts",
+  "version": "1.0.0",
+  "description": "A simple app of TypeScript to calculate the area and circumference of shapes that implement SOLID.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js",
+    "dev": "tsc --watch & nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aristorinjuang/solid-in-ts.git"
+  },
+  "keywords": [
+    "typescript",
+    "ts",
+    "javascript",
+    "js",
+    "solid",
+    "shape",
+    "shapes"
+  ],
+  "author": "Aristo Rinjuang <contact@aristorinjuang.com> (https://aristorinjuang.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aristorinjuang/solid-in-ts/issues"
+  },
+  "homepage": "https://github.com/aristorinjuang/solid-in-ts#readme",
+  "dependencies": {
+    "@types/uuid": "^8.3.4",
+    "uuid": "^8.3.2"
+  }
+}
