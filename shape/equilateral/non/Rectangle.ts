@@ -21,7 +21,7 @@ export default class Rectangle implements NonEquilateral {
     return this._length * this._width
   }
 
-  public circumference(): number {
+  public perimeter(): number {
     return 2 * (this._length + this._width)
   }
 }

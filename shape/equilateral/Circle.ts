@@ -15,7 +15,7 @@ export default class Circle implements Equilateral {
     return Math.PI * Math.pow(this._radius, 2)
   }
 
-  public circumference(): number {
+  public perimeter(): number {
     return 2 * Math.PI * this._radius
   }
 }

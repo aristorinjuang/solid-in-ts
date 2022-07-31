@@ -31,7 +31,7 @@ let s3: NonEquilateral = new Rectangle();
 s3.a = 6
 s3.b = 7
 console.log('s3.area()', s3.area())
-console.log('s3.circumference()', s3.circumference())
+console.log('s3.perimeter()', s3.perimeter())
 
 let u2: PremiumUser = new Member(db);
 u2.addShape(s1)
@@ -40,5 +40,5 @@ u2.addShape(s3)
 
 console.log('u2.averageShapeArea', u2.averageShapeArea)
 console.log('u2.shapeAreas', u2.shapeAreas)
-console.log('u2.averageShapeCircumference', u2.averageShapeCircumference)
-console.log('u2.shapeCircumferences', u2.shapeCircumferences)
+console.log('u2.averageShapePerimeter', u2.averageShapePerimeter)
+console.log('u2.shapePerimeters', u2.shapePerimeters)

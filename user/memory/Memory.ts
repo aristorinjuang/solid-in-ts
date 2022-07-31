@@ -5,12 +5,12 @@ import User from '../User';
 export default class Memory implements Repository {
   private _shapes: Map<bigint, Shape[]>
   private _shapeAreas: Map<bigint, number>
-  private _shapeCircumferences: Map<bigint, number>
+  private _shapePerimeters: Map<bigint, number>
 
   constructor() {
     this._shapes = new Map<bigint, Shape[]>()
     this._shapeAreas = new Map<bigint, number>()
-    this._shapeCircumferences = new Map<bigint, number>()
+    this._shapePerimeters = new Map<bigint, number>()
   }
 
   public addShape(u: User, s: Shape): void {
@@ -24,10 +24,10 @@ export default class Memory implements Repository {
     }
     this._shapeAreas.set(u.id, Number(this._shapeAreas.get(u.id)) + s.area())
 
-    if (this._shapeCircumferences.get(u.id) === undefined) {
-      this._shapeCircumferences.set(u.id, 0)
+    if (this._shapePerimeters.get(u.id) === undefined) {
+      this._shapePerimeters.set(u.id, 0)
     }
-    this._shapeCircumferences.set(u.id, Number(this._shapeCircumferences.get(u.id)) + s.circumference())
+    this._shapePerimeters.set(u.id, Number(this._shapePerimeters.get(u.id)) + s.perimeter())
   }
 
   public shapes(u: User): Shape[] {
@@ -38,7 +38,7 @@ export default class Memory implements Repository {
     return Number(this._shapeAreas.get(u.id))
   }
 
-  public shapeCircumference(u: User): number {
-    return Number(this._shapeCircumferences.get(u.id))
+  public shapePerimeters(u: User): number {
+    return Number(this._shapePerimeters.get(u.id))
   }
 }

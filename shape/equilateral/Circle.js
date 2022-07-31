@@ -10,7 +10,7 @@ class Circle {
     area() {
         return Math.PI * Math.pow(this._radius, 2);
     }
-    circumference() {
+    perimeter() {
         return 2 * Math.PI * this._radius;
     }
 }

@@ -10,7 +10,7 @@ class Square {
     area() {
         return Math.pow(this._side, 2);
     }
-    circumference() {
+    perimeter() {
         return 4 * this._side;
     }
 }

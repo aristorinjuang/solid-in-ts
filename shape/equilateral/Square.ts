@@ -15,7 +15,7 @@ export default class Square implements Equilateral {
     return Math.pow(this._side, 2)
   }
 
-  public circumference(): number {
+  public perimeter(): number {
     return 4 * this._side
   }
 }

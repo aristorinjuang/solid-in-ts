@@ -8,11 +8,11 @@ class Member extends Guest_1.default {
     constructor(r) {
         super(r);
     }
-    get shapeCircumferences() {
-        return this._repo.shapeCircumference(this);
+    get shapePerimeters() {
+        return this._repo.shapePerimeters(this);
     }
-    get averageShapeCircumference() {
-        return this._repo.shapeCircumference(this) / this._repo.shapes(this).length;
+    get averageShapePerimeter() {
+        return this._repo.shapePerimeters(this) / this._repo.shapes(this).length;
     }
 }
 exports.default = Member;

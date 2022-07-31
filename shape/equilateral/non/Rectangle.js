@@ -14,7 +14,7 @@ class Rectangle {
     area() {
         return this._length * this._width;
     }
-    circumference() {
+    perimeter() {
         return 2 * (this._length + this._width);
     }
 }

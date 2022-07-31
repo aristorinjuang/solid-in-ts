@@ -1,7 +1,7 @@
 {
   "name": "solid-in-ts",
   "version": "1.0.0",
-  "description": "A simple app of TypeScript to calculate the area and circumference of shapes that implement SOLID.",
+  "description": "A simple app of TypeScript to calculate the area and perimeter of shapes that implement SOLID.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
